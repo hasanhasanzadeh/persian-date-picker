@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+	<title> demo</title>
+
+	<link rel="stylesheet" href="js/persian-datepicker.css"/>
+
+
+</head>
+
+<body>
+
+
+<form action="#" method="get">
+	<input type="text" class="example1" name="birthday"/>
+	<input type="submit" value="submit">
+</form>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/persian-date.js"></script>
+<script src="js/persian-datepicker.js"></script>
+
+<script>
+		$('.example1').persianDatepicker({
+			observer: true,
+			format: 'YYYY/MM/DD',
+			altField: '.example1-alt'
+		});
+</script>
+</body>
+
+</html>
